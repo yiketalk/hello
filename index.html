@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			body{
+				/*background-color: skyblue;*/
+				/* 清除滚动条 */
+				margin: 0;
+				/* 清除屏外内容 */
+				overflow: hidden;
+				
+				/* 使用径向渐变 制作太阳效果 */
+				background: radial-gradient(300px at top right,yellow,orange,skyblue);
+			}
+			/* 设置高度 */
+			html,body{
+				height: 100%;
+			}
+			
+			img{
+				position:absolute;
+				bottom:-190px;
+				transition:  all 1s;
+			}
+			
+			body:hover img{
+				transform: translate(1100px,-700px) rotate(80deg) scale(0.1,0.1);
+			}
+		</style>
+	</head>
+	<body>
+		<img src="img/rocket.png" alt="" />
+	</body>
+</html>
